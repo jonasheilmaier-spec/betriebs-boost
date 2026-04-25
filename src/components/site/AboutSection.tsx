@@ -1,4 +1,5 @@
 
+import jonasPortrait from "@/assets/jonas.png";
 
 const AboutSection = () => {
   return (
@@ -13,13 +14,18 @@ const AboutSection = () => {
         <div className="mt-14 grid items-center gap-10 md:grid-cols-[auto,1fr] md:gap-14">
           <div className="mx-auto md:mx-0">
             <img
-              src="https://i.ibb.co/k6DQ14mL/ChatGPT-Image-25-Apr-2026-21-25-38.png"
+              src={jonasPortrait}
               alt="Porträt von Jonas Heilmaier, Gründer von Betriebshelfer"
-              width={220}
-              height={220}
+              width={240}
+              height={240}
               loading="lazy"
-              className="rounded-full border-4 border-card object-cover shadow-card"
-              style={{ width: "220px", height: "220px" }}
+              className="rounded-full border-4 border-card shadow-card"
+              style={{
+                width: "240px",
+                height: "240px",
+                objectFit: "cover",
+                objectPosition: "center top",
+              }}
             />
           </div>
 
