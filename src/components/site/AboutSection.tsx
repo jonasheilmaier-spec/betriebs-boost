@@ -12,16 +12,15 @@ const AboutSection = () => {
 
         <div className="mt-14 grid items-center gap-10 md:grid-cols-[auto,1fr] md:gap-14">
           <div className="mx-auto md:mx-0">
-            <div className="relative h-48 w-48 overflow-hidden rounded-full border-4 border-card shadow-card sm:h-56 sm:w-56 md:h-64 md:w-64">
-              <img
-                src={jonasPortrait}
-                alt="Porträt von Jonas Heilmaier, Gründer von Betriebshelfer"
-                width={768}
-                height={768}
-                loading="lazy"
-                className="h-full w-full object-cover"
-              />
-            </div>
+            <img
+              src="https://i.ibb.co/k6DQ14mL/ChatGPT-Image-25-Apr-2026-21-25-38.png"
+              alt="Porträt von Jonas Heilmaier, Gründer von Betriebshelfer"
+              width={220}
+              height={220}
+              loading="lazy"
+              className="rounded-full border-4 border-card object-cover shadow-card"
+              style={{ width: "220px", height: "220px" }}
+            />
           </div>
 
           <div className="text-center md:text-left">
