@@ -9,10 +9,17 @@ const Hero = () => {
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=2000&q=80')",
+            "url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80')",
         }}
       />
-      <div aria-hidden className="absolute inset-0 bg-black/55" />
+      <div
+        aria-hidden
+        className="absolute inset-0"
+        style={{
+          backgroundImage:
+            "linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 100%)",
+        }}
+      />
       <div className="container-tight relative py-20 sm:py-28 lg:py-32">
         <div className="mx-auto max-w-3xl text-center">
           <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs font-medium text-white backdrop-blur">
