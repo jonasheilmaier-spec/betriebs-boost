@@ -3,23 +3,28 @@ import { MapPin } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section id="top" className="relative overflow-hidden bg-background">
+    <section id="top" className="relative overflow-hidden">
       <div
         aria-hidden
-        className="absolute inset-x-0 top-0 h-[420px] bg-gradient-to-b from-surface-soft to-transparent"
+        className="absolute inset-0 bg-cover bg-center"
+        style={{
+          backgroundImage:
+            "url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=2000&q=80')",
+        }}
       />
+      <div aria-hidden className="absolute inset-0 bg-black/55" />
       <div className="container-tight relative py-20 sm:py-28 lg:py-32">
         <div className="mx-auto max-w-3xl text-center">
-          <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-3 py-1 text-xs font-medium text-muted-foreground shadow-card">
+          <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs font-medium text-white backdrop-blur">
             <MapPin className="h-3.5 w-3.5 text-accent" />
             Persönlich vor Ort in Bayern
           </span>
-          <h1 className="mt-6 text-4xl font-bold tracking-tight text-primary sm:text-5xl lg:text-6xl">
+          <h1 className="mt-6 text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
             Mehr Zeit für Ihr Handwerk.
             <br />
             <span className="text-accent">Weniger Arbeit für den Schreibtisch.</span>
           </h1>
-          <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground sm:text-xl">
+          <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-white/85 sm:text-xl">
             Wir automatisieren Ihre wiederkehrenden Prozesse — Angebote, Rechnungen, Kundenanfragen.
             Persönlich vor Ort in Bayern.
           </p>
@@ -33,7 +38,7 @@ const Hero = () => {
             </Button>
             <a
               href="#loesung"
-              className="text-sm font-medium text-muted-foreground underline-offset-4 hover:text-primary hover:underline"
+              className="text-sm font-medium text-white/80 underline-offset-4 hover:text-white hover:underline"
             >
               Was wir machen →
             </a>
