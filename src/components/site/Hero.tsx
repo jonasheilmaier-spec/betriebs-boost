@@ -9,8 +9,8 @@ const Hero = () => {
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=1920&q=80')",
-          filter: "brightness(0.45) blur(2px)",
+            "url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1920&q=80')",
+          filter: "brightness(0.4) blur(3px)",
         }}
       />
       <div
@@ -18,7 +18,7 @@ const Hero = () => {
         className="absolute inset-0"
         style={{
           backgroundImage:
-            "linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.65) 100%)",
+            "linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.7) 100%)",
         }}
       />
       <div className="container-tight relative py-20 sm:py-28 lg:py-32">
