@@ -2,9 +2,11 @@ import Header from "@/components/site/Header";
 import Hero from "@/components/site/Hero";
 import ProblemSection from "@/components/site/ProblemSection";
 import SolutionSection from "@/components/site/SolutionSection";
+import Testimonials from "@/components/site/Testimonials";
 import RoiSection from "@/components/site/RoiSection";
 import HowItWorks from "@/components/site/HowItWorks";
 import AboutSection from "@/components/site/AboutSection";
+import CostCalculator from "@/components/site/CostCalculator";
 import ContactForm from "@/components/site/ContactForm";
 import Footer from "@/components/site/Footer";
 
@@ -16,9 +18,11 @@ const Index = () => {
         <Hero />
         <ProblemSection />
         <SolutionSection />
+        <Testimonials />
         <RoiSection />
         <HowItWorks />
         <AboutSection />
+        <CostCalculator />
         <ContactForm />
       </main>
       <Footer />

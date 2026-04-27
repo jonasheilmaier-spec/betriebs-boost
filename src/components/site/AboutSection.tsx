@@ -32,11 +32,10 @@ const AboutSection = () => {
           <div className="text-center md:text-left">
             <h3 className="text-2xl font-bold text-primary sm:text-3xl">Ich bin Jonas.</h3>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
-              22 Jahre alt, Student der Wirtschaftsinformatik in München — und ich kenne Handwerk
-              nicht nur aus dem Lehrbuch. Ich habe selbst in verschiedenen Gewerken gearbeitet und
-              weiß, was in einem Betrieb wirklich Zeit kostet. Deshalb baue ich keine generischen
-              Lösungen — ich schaue mir Ihren Betrieb an und automatisiere genau das, was den
-              größten Unterschied macht. Persönlich vor Ort in Bayern.
+              Ich habe selbst in verschiedenen Handwerksbetrieben gearbeitet und weiß, was wirklich
+              Zeit kostet. Deshalb baue ich keine generischen Lösungen – ich schaue mir Ihren
+              Betrieb an und automatisiere genau das, was den größten Unterschied macht. Persönlich
+              vor Ort in Bayern.
             </p>
           </div>
         </div>

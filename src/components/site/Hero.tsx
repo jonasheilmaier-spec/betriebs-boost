@@ -3,36 +3,19 @@ import { MapPin } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section id="top" className="relative overflow-hidden">
-      <div
-        aria-hidden
-        className="absolute inset-0 bg-cover bg-center"
-        style={{
-          backgroundImage:
-            "url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1920&q=80')",
-          filter: "brightness(0.4) blur(3px)",
-        }}
-      />
-      <div
-        aria-hidden
-        className="absolute inset-0"
-        style={{
-          backgroundImage:
-            "linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.7) 100%)",
-        }}
-      />
+    <section id="top" className="relative overflow-hidden bg-background">
       <div className="container-tight relative py-20 sm:py-28 lg:py-32">
         <div className="mx-auto max-w-3xl text-center">
-          <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs font-medium text-white backdrop-blur">
-            <MapPin className="h-3.5 w-3.5 text-accent" />
+          <span className="inline-flex items-center gap-2 rounded-full border border-border bg-secondary px-3 py-1 text-xs font-medium text-primary">
+            <MapPin className="h-3.5 w-3.5 text-primary" />
             Persönlich vor Ort in Bayern
           </span>
-          <h1 className="mt-6 text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
+          <h1 className="mt-6 text-4xl font-bold tracking-tight text-primary sm:text-5xl lg:text-6xl">
             Mehr Zeit für Ihr Handwerk.
             <br />
-            <span className="text-accent">Weniger Arbeit für den Schreibtisch.</span>
+            <span className="text-primary">Weniger Arbeit für den Schreibtisch.</span>
           </h1>
-          <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-white/85 sm:text-xl">
+          <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground sm:text-xl">
             Wir automatisieren Ihre wiederkehrenden Prozesse — Angebote, Rechnungen, Kundenanfragen.
             Persönlich vor Ort in Bayern.
           </p>
@@ -46,7 +29,7 @@ const Hero = () => {
             </Button>
             <a
               href="#loesung"
-              className="text-sm font-medium text-white/80 underline-offset-4 hover:text-white hover:underline"
+              className="text-sm font-medium text-muted-foreground underline-offset-4 hover:text-primary hover:underline"
             >
               Was wir machen →
             </a>
