@@ -25,8 +25,8 @@
     --muted: 210 20% 96%;
     --muted-foreground: 215 15% 42%;
 
-    /* Deep teal accent */
-    --accent: 184 70% 32%;
+    /* Dark navy accent (#0f172a) */
+    --accent: 222 47% 11%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 75% 48%;
@@ -37,7 +37,7 @@
 
     --border: 215 20% 90%;
     --input: 215 20% 88%;
-    --ring: 184 70% 32%;
+    --ring: 222 47% 11%;
 
     --radius: 0.5rem;
 
