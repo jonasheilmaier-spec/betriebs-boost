@@ -5,6 +5,7 @@ import SolutionSection from "@/components/site/SolutionSection";
 import RoiSection from "@/components/site/RoiSection";
 import HowItWorks from "@/components/site/HowItWorks";
 import AboutSection from "@/components/site/AboutSection";
+import VapiDemo from "@/components/site/VapiDemo";
 import CostCalculator from "@/components/site/CostCalculator";
 import ContactForm from "@/components/site/ContactForm";
 import Footer from "@/components/site/Footer";
@@ -20,6 +21,7 @@ const Index = () => {
         <RoiSection />
         <HowItWorks />
         <AboutSection />
+        <VapiDemo />
         <CostCalculator />
         <ContactForm />
       </main>
