@@ -119,7 +119,7 @@ const CostCalculator = () => {
               stroke="currentColor"
               strokeWidth={2}
             >
-              <path strokeLinecap="round" alt" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
             <p>
               <span className="font-semibold">100 % Geld-zurück-Garantie:</span>{" "}
