@@ -29,17 +29,10 @@ const CostCalculator = () => {
   const [hours, setHours] = useState(6);
   const [rate, setRate] = useState(60);
 
-  const { perWeek, perMonth, perYear, savings } = useMemo(() => {
-    const week = hours * rate;
-    const month = week * 4.33;
-    const year = week * 52;
-    return {
-      perWeek: week,
-      perMonth: month,
-      perYear: year,
-      savings: Math.max(0, month - RETAINER),
-    };
-  }, [hours, rate]);
+  const { perWeek, perMonth, perYear, savings } = useMemo(
+    () => calculateCost(hours, rate),
+    [hours, rate]
+  );
 
   return (
     <section id="rechner" className="bg-background py-20 sm:py-24">
