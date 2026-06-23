@@ -111,6 +111,23 @@ const CostCalculator = () => {
             </p>
           </div>
 
+          <div className="mt-6 flex items-start gap-3 rounded-xl border border-emerald-200 bg-emerald-50 p-4 text-sm text-emerald-900">
+            <svg
+              className="mt-0.5 h-5 w-5 shrink-0 text-emerald-600"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <p>
+              <span className="font-semibold">100 % Geld-zurück-Garantie:</span>{" "}
+              Wenn Sie mit dem Setup innerhalb der ersten 4 Wochen nicht zufrieden sind,
+              erhalten Sie Ihr Geld vollständig zurück.
+            </p>
+          </div>
+
           <div className="mt-8 flex justify-center">
             <Button
               asChild
