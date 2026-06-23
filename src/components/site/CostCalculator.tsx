@@ -4,28 +4,35 @@ import { Slider } from "@/components/ui/slider";
 
 const RETAINER = 300;
 
-const formatEuro = (value: number) =>
+export const formatEuro = (value: number) =>
   new Intl.NumberFormat("de-DE", {
     style: "currency",
     currency: "EUR",
     maximumFractionDigits: 0,
   }).format(Math.round(value));
 
+export const WEEKS_PER_MONTH = 4.33;
+
+export const calculateCost = (hours: number, rate: number) => {
+  const week = hours * rate;
+  const month = week * WEEKS_PER_MONTH;
+  const year = week * 52;
+  return {
+    perWeek: week,
+    perMonth: month,
+    perYear: year,
+    savings: Math.max(0, month - RETAINER),
+  };
+};
+
 const CostCalculator = () => {
   const [hours, setHours] = useState(6);
   const [rate, setRate] = useState(60);
 
-  const { perWeek, perMonth, perYear, savings } = useMemo(() => {
-    const week = hours * rate;
-    const month = week * 4.33;
-    const year = week * 52;
-    return {
-      perWeek: week,
-      perMonth: month,
-      perYear: year,
-      savings: Math.max(0, month - RETAINER),
-    };
-  }, [hours, rate]);
+  const { perWeek, perMonth, perYear, savings } = useMemo(
+    () => calculateCost(hours, rate),
+    [hours, rate]
+  );
 
   return (
     <section id="rechner" className="bg-background py-20 sm:py-24">
